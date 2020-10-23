@@ -19,7 +19,7 @@ class Jugador{
 class Tablero{
     casillas(numerito){
         switch (numerito){
-            //Casillas para las escaleras
+            //apartado de escaleras
         case 6:
             return 12;
         case 19:
