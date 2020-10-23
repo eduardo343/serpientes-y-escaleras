@@ -66,8 +66,8 @@ class Tablero{
 }
 let dado = new Dado();
 let mesa = new Tablero();
-let p1 = new Jugador("pedro"); //a que buena referencia
-let p2 = new Jugador("pablo");//rolon con esos nombres
+let p1 = new player("pedro"); //a que buena referencia
+let p2 = new player("pablo");//rolon con esos nombres
 
 while (p1.posicion <= 100 && p2.posicion <=100){
     p1.posicion = mesa.casillas(p1.avanzar(dado.tirar()));
@@ -76,7 +76,7 @@ while (p1.posicion <= 100 && p2.posicion <=100){
      ${p2.nombre} se encuentra en la posicion: ${p2.posicion}`)
 }
 if(p1.posicion >= 100){
-    console.log(`Jugador 1: ${p1.nombre}. !Ah GANADO¡`)
+    console.log(`player 1: ${p1.nombre}. ¡has ganado player 1 gg winner!`)
 }else if (p2.posicion >= 100){
-    console.log(`Jugador 2: ${p2.nombre}. !Ah GANADO¡`)
+    console.log(`player 2: ${p2.nombre}. ¡has ganadoplayer 2 gg!`)
 }
